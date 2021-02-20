@@ -4,6 +4,22 @@ from metapack_build.tasks.collection import ns, foreach_metapack_subdir
 
 
 
+@task
+def git_add(c):
+    """Run git commit -a  on all submodules"""
+    c.run(f"git submodule foreach 'git add -A'")
+
+ns.add_task(git_add)
+
+@task
+def update_files(c):
+    """Print the package url for each sub directory"""
+    
+    for d in foreach_metapack_subdir():
+        c.run('mp update -f')
+        
+ns.add_task(update_files)
+
 # This is an example task for iterating over all of the sub directoryies
 # that have a data package ( directory with metadata.csv ) Th
 # foreach_metapack_subdir generator returns pathlib.Path() for each directory
