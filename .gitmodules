@@ -1,0 +1,33 @@
+[submodule "cde.ca.gov-absenteeism"]
+	path = cde.ca.gov-absenteeism
+	url = https://github.com/metatab-packages/cde.ca.gov-absenteeism.git
+[submodule "cde.ca.gov-accountability_dashboard-2017"]
+	path = cde.ca.gov-accountability_dashboard-2017
+	url = https://github.com/metatab-packages/cde.ca.gov-accountability_dashboard-2017.git
+[submodule "cde.ca.gov-accountability_dashboard-2018"]
+	path = cde.ca.gov-accountability_dashboard-2018
+	url = https://github.com/metatab-packages/cde.ca.gov-accountability_dashboard-2018.git
+[submodule "cde.ca.gov-cacfp_sites"]
+	path = cde.ca.gov-cacfp_sites
+	url = https://github.com/metatab-packages/cde.ca.gov-cacfp_sites.git
+[submodule "cde.ca.gov-calpads_upc"]
+	path = cde.ca.gov-calpads_upc
+	url = https://github.com/metatab-packages/cde.ca.gov-calpads_upc.git
+[submodule "cde.ca.gov-current_expense"]
+	path = cde.ca.gov-current_expense
+	url = https://github.com/metatab-packages/cde.ca.gov-current_expense.git
+[submodule "cde.ca.gov-enrollment"]
+	path = cde.ca.gov-enrollment
+	url = https://github.com/metatab-packages/cde.ca.gov-enrollment.git
+[submodule "cde.ca.gov-fitnessgram-1999e-ca"]
+	path = cde.ca.gov-fitnessgram-1999e-ca
+	url = https://github.com/metatab-packages/cde.ca.gov-fitnessgram-1999e-ca.git
+[submodule "cde.ca.gov-frpm"]
+	path = cde.ca.gov-frpm
+	url = https://github.com/metatab-packages/cde.ca.gov-frpm.git
+[submodule "cde.ca.gov-reimbursements"]
+	path = cde.ca.gov-reimbursements
+	url = https://github.com/metatab-packages/cde.ca.gov-reimbursements.git
+[submodule "cde.ca.gov-schools"]
+	path = cde.ca.gov-schools
+	url = https://github.com/metatab-packages/cde.ca.gov-schools.git
