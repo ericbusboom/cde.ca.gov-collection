@@ -16,7 +16,7 @@ def update_files(c):
     """Print the package url for each sub directory"""
     
     for d in foreach_metapack_subdir():
-        c.run('mp update -f')
+        c.run('mp update -f -S')
         
 ns.add_task(update_files)
 
