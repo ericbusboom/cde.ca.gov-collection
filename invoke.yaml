@@ -5,7 +5,23 @@
 # 
 
 
-#metapack: 
+metapack: 
+    
+     
+    # Add this to invoke.yaml
+    build_order:
+        - cde.ca.gov-reimbursements
+        - cde.ca.gov-fitnessgram-1999e-ca
+        - cde.ca.gov-current_expense
+        - cde.ca.gov-schools
+        - cde.ca.gov-frpm-source
+        - cde.ca.gov-frpm
+        - cde.ca.gov-cacfp_sites
+        - cde.ca.gov-calpads_upc
+        - cde.ca.gov-accountability_dashboard-2017
+        - cde.ca.gov-accountability_dashboard-2018
+        - cde.ca.gov-enrollment
+
     # Set this to the S3 bucket where you will publish public data 
     # packages. You must have a boto or .aws configuration and 
     # credentials to access the bucket
@@ -18,12 +34,10 @@
     # wp_site: data.sandiegodata.org
    
     # Groups will become categories when publishing to Wordpress
-    #groups:
-    #    - one
-    #    - two
+    groups:
+        - cde.ca.gov
 
     # Tags are tags when publishing to wordpress.
     # 'tags': ['county', 'national'], 
-    #tags:
-    #    - tag_one
-    #    - tag_two
+    tags:
+        - education

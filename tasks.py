@@ -1,6 +1,6 @@
 from invoke import task, Collection
 
-from metapack_build.tasks.collection import ns, foreach_metapack_subdir
+from metapack_build.tasks.collection import ns, foreach_metapack_subdir, ns_foreach_task_subdir
 
 
 
@@ -15,7 +15,7 @@ ns.add_task(git_add)
 def update_files(c):
     """Print the package url for each sub directory"""
     
-    for d in foreach_metapack_subdir():
+    for d in foreach_metapack_subdir(c):
         c.run('mp update -f -S')
         
 ns.add_task(update_files)
@@ -28,7 +28,7 @@ ns.add_task(update_files)
 def foreach_package(c):
     """Print the package url for each sub directory"""
     
-    for d in foreach_metapack_subdir():
+    for d in foreach_metapack_subdir(c):
         c.run('mp info -p')
         
 ns.add_task(foreach_package)
@@ -40,7 +40,7 @@ ns.add_task(foreach_package)
 @task
 def foreach_tasks(c):
     """Print invoke's configuration by running the config tasks in each subdirectory """
-    for sp_ns in ns_foreach_task_subdir():
+    for sp_ns in ns_foreach_task_subdir(c):
         try:
             sp_ns.tasks.config(c)
         except UnexpectedExit:
