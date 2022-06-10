@@ -31,7 +31,7 @@ metapack:
     # Set the wordpress site where package documentation and links will 
     # be published The string is a reference to the `wordpress` section 
     # in  ~/.metapack.yaml . 
-    # wp_site: data.sandiegodata.org
+    wp_site: sdcta.civicknowledge.com
    
     # Groups will become categories when publishing to Wordpress
     groups:
