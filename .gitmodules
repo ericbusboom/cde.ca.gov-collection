@@ -22,21 +22,9 @@
 [submodule "cde.ca.gov-frpm"]
 	path = cde.ca.gov-frpm
 	url = https://github.com/metatab-packages/cde.ca.gov-frpm.git
-[submodule "cde.ca.gov-reimbursements"]
-	path = cde.ca.gov-reimbursements
-	url = https://github.com/metatab-packages/cde.ca.gov-reimbursements.git
-[submodule "cde.ca.gov-schools"]
-	path = cde.ca.gov-schools
-	url = https://github.com/metatab-packages/cde.ca.gov-schools.git
 [submodule "cde.ca.gov-caaspp-2015e"]
 	path = cde.ca.gov-caaspp-2015e
 	url = https://github.com/metatab-packages/cde.ca.gov-caaspp-2015e.git
 [submodule "cde.ca.gov-absenteeism"]
 	path = cde.ca.gov-absenteeism
 	url = https://github.com/metatab-packages/cde.ca.gov-absenteeism.git
-[submodule "cde.ca.gov-postsec_enroll"]
-	path = cde.ca.gov-postsec_enroll
-	url = https://github.com/metatab-packages/cde.ca.gov-postsec_enroll.git
-[submodule "cde.ca.gov-staff"]
-	path = cde.ca.gov-staff
-	url = https://github.com/metatab-packages/cde.ca.gov-staff.git
