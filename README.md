@@ -42,3 +42,4 @@ The top lvel directory defines `invoke` tasks. To use invoke you will need to `p
 
 * `invoke build`: Run `mp build` in each package
 * `invoke make`: Run `mp make` in each package, which will build the package, upload it to s3 and publish it to Wordpress, with the proper configuration. 
+

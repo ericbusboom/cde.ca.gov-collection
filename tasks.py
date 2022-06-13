@@ -1,4 +1,5 @@
 from invoke import task, Collection
+from pathlib import Path
 
 from metapack_build.tasks.collection import ns, foreach_metapack_subdir, ns_foreach_task_subdir
 
@@ -19,6 +20,28 @@ def update_files(c):
         c.run('mp update -f -S')
         
 ns.add_task(update_files)
+
+
+@task
+def update_license(c):
+    """Update the license at the end of the README in each package with the
+    contents of the license_template.txt file"""
+    import re
+    
+    p = re.compile('\s+<!-- start_license -->(.*)<!-- end_license -->', re.M|re.DOTALL)
+    
+    lictxt = "\n\n"+Path('./license-template.txt').read_text()
+    
+    for d in foreach_metapack_subdir(c):
+        readme_file = Path('README.md')
+        try:
+            readme = readme_file.read_text()
+            readme_file.write_text( p.sub(lictxt, readme))
+        except FileNotFoundError:
+            pass
+    
+        
+ns.add_task(update_license)
 
 # This is an example task for iterating over all of the sub directoryies
 # that have a data package ( directory with metadata.csv ) Th
