@@ -40,3 +40,9 @@
 [submodule "cde.ca.gov-staff"]
 	path = cde.ca.gov-staff
 	url = https://github.com/metatab-packages/cde.ca.gov-staff.git
+[submodule "cde.ca.gov-indirect_costs"]
+	path = cde.ca.gov-indirect_costs
+	url = https://github.com/metatab-packages/cde.ca.gov-indirect_costs.git
+[submodule "cde.ca.gov-discipline"]
+	path = cde.ca.gov-discipline
+	url = https://github.com/metatab-packages/cde.ca.gov-discipline.git

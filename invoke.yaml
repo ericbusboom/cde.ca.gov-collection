@@ -26,6 +26,7 @@ metapack:
         - cde.ca.gov-postsec_enroll
         - cde.ca.gov-schools
         - cde.ca.gov-staff
+        - cde.ca.gov-indirect_costs
         
 
     # Set this to the S3 bucket where you will publish public data 

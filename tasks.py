@@ -33,10 +33,17 @@ def update_license(c):
     lictxt = "\n\n"+Path('./license-template.txt').read_text()
     
     for d in foreach_metapack_subdir(c):
+ 
         readme_file = Path('README.md')
         try:
             readme = readme_file.read_text()
-            readme_file.write_text( p.sub(lictxt, readme))
+            
+            if '<!-- start_license -->' in readme:
+                print('Replacing')
+                readme_file.write_text( p.sub(lictxt, readme))
+            else:
+                print("Adding")
+                readme_file.write_text(readme+lictxt)
         except FileNotFoundError:
             pass
     
