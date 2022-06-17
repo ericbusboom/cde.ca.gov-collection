@@ -46,3 +46,6 @@
 [submodule "cde.ca.gov-discipline"]
 	path = cde.ca.gov-discipline
 	url = https://github.com/metatab-packages/cde.ca.gov-discipline.git
+[submodule "ca.gov-govt_compensation"]
+	path = ca.gov-govt_compensation
+	url = https://github.com/metatab-packages/ca.gov-govt_compensation.git
