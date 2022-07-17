@@ -49,3 +49,12 @@
 [submodule "ca.gov-govt_compensation"]
 	path = ca.gov-govt_compensation
 	url = https://github.com/metatab-packages/ca.gov-govt_compensation.git
+[submodule "sandiegodata.org-sd_demo_links-ca"]
+	path = sandiegodata.org-sd_demo_links-ca
+	url = https://github.com/metatab-packages/sandiegodata.org-sd_demo_links-ca.git
+[submodule "census.gov-district_demo-ca"]
+	path = census.gov-district_demo-ca
+	url = https://github.com/metatab-packages/census.gov-district_demo-ca.git
+[submodule "census.gov-school_finance"]
+	path = census.gov-school_finance
+	url = https://github.com/metatab-packages/census.gov-school_finance.git
